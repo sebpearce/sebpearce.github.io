@@ -24,11 +24,12 @@
     <p
       class="flex flex-col sm:flex-row items-center text-white tracking-widest mb-10 font-semibold"
     >
-      <span class="mb-4 sm:mb-0">💻 front-end developer</span><span
+      <span class="mb-4 sm:mb-0">💻&nbsp;front-end developer</span><span
         class="hidden sm:block text-gray-500 sm:mx-1">|</span
       ><span
-        ><span class="inline sm:hidden">🎵 </span>composer
-        <span class="hidden sm:inline">🎵</span></span
+        ><span class="inline sm:hidden">🎵&nbsp;</span>composer<span
+          class="hidden sm:inline">&nbsp;🎵</span
+        ></span
       >
     </p>
     <ul class="flex items-center justify-evenly w-full max-w-100 text-gray-500">
