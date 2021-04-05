@@ -68,6 +68,6 @@
     opacity="0.4"
     stroke-width="0.5"
     stroke-dasharray="12 4"
-    class="animate-spin-30"
+    class="animate-spin-30-reverse"
   />
 </svg>
