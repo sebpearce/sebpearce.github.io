@@ -1,7 +1,7 @@
 const { colors } = require("tailwindcss/defaultTheme")
 
 module.exports = {
-  darkMode: "class",
+  darkMode: "media",
   theme: {
     extend: {
       typography: {
@@ -11,17 +11,36 @@ module.exports = {
               textDecoration: "none",
               color: colors.blue["600"]
             },
+            ":not(h1,h2,h3,h4,h5,h6) > a:hover": {
+              textDecoration: "underline"
+            },
             li: {
               listStyleType: "none"
             },
             h1: {
-              fontWeight: "700"
+              fontWeight: "700",
+              lineHeight: "1.5rem"
             },
             "h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a": {
               color: "inherit"
             },
             hr: {
               border: `1px solid ${colors.gray["600"]}`
+            },
+            "ol, ul": {
+              paddingLeft: "2.5rem"
+            },
+            "blockquote p:first-of-type::before": {
+              content: ""
+            },
+            "blockquote p:last-of-type::after": {
+              content: ""
+            },
+            "code::before": {
+              content: ""
+            },
+            "code::after": {
+              content: ""
             }
           }
         },
