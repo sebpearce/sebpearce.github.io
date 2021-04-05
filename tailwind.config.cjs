@@ -1,6 +1,55 @@
+const { colors } = require("tailwindcss/defaultTheme")
+
 module.exports = {
+  darkMode: "class",
   theme: {
     extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            a: {
+              textDecoration: "none",
+              color: colors.blue["600"]
+            },
+            li: {
+              listStyleType: "none"
+            },
+            h1: {
+              fontWeight: "700"
+            },
+            "h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a": {
+              color: "inherit"
+            },
+            hr: {
+              border: `1px solid ${colors.gray["600"]}`
+            }
+          }
+        },
+        light: {
+          css: {
+            color: colors.gray["300"],
+            strong: {
+              color: colors.gray["100"]
+            },
+            code: {
+              color: colors.gray["100"]
+            },
+            blockquote: {
+              color: colors.gray["100"]
+            },
+            "h1, h2, h3, h4, h5, h6": {
+              color: colors.white
+            },
+            a: {
+              color: colors.yellow["200"],
+              textDecoration: "none"
+            },
+            "h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a": {
+              color: "inherit"
+            }
+          }
+        }
+      },
       animation: {
         "spin-30": "spin 30s linear infinite",
         "spin-40": "spin 40s linear infinite",
@@ -34,5 +83,11 @@ module.exports = {
     //    colors: {
     //      black: "#111111"
     //    }
-  }
+  },
+  variants: {
+    extend: {
+      typography: ["dark"]
+    }
+  },
+  plugins: [require("@tailwindcss/typography")]
 }

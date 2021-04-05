@@ -6,9 +6,11 @@
   import Cursor from "../lib/Cursor.svelte"
 </script>
 
-<main class="h-screen flex items-center justify-center overflow-x-hidden">
+<main
+  class="h-screen flex items-center justify-center overflow-x-hidden bg-hex-111 text-white"
+>
   <div
-    class="relative inline-flex flex-col items-center p-3 sm:transform sm:scale-125
+    class="relative inline-flex flex-col items-center p-3 transform sm:scale-125
     transition-transform duration-500"
   >
     <div
