@@ -7,7 +7,10 @@
 </script>
 
 <main class="h-screen flex items-center justify-center overflow-x-hidden">
-  <div class="relative inline-flex flex-col items-center p-3">
+  <div
+    class="relative inline-flex flex-col items-center p-3 sm:transform sm:scale-125
+    transition-transform duration-500"
+  >
     <div
       class="-z-1 absolute -top-1/3 left-1/8 text-gray-50 transform scale-150 animate-fadein"
     >
