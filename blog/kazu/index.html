@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script data-svelte="svelte-1rpz0h3">if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark")
+    } else {
+      document.documentElement.classList.remove("dark")
+    }
+  </script>
+
+
+
+<link rel="modulepreload" href="/./_app/start-c3acc060.js">
+			<link rel="modulepreload" href="/./_app/chunks/vendor-6704d4da.js">
+			<link rel="modulepreload" href="/./_app/pages/blog/kazu/index.md-a5dcd7b8.js">
+			<link rel="modulepreload" href="/./_app/pages/blog.svelte-9ac8cdbc.js">
+			<link rel="stylesheet" href="/./_app/assets/start-a8cd1609.css">
+			<link rel="stylesheet" href="/./_app/assets/windi-bb585335.css">
+
+
+		<script type="module">
+			import { start } from "/./_app/start-c3acc060.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/blog/kazu/index.md-a5dcd7b8.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/blog/kazu",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+  </head>
+  <body>
+    <div id="svelte">
+
+
+
+
+<div class="bg-white dark:bg-hex-111 flex justify-center"><article class="min-w-0 mx-1/10 mx-5 sm:mx-10 md:mx-20 py-20 prose prose-xl dark:prose-light"><h4>2013-10-14</h4>
+    <h1 id="kazu-a-japanese-number-training-tool"><a href="#kazu-a-japanese-number-training-tool">Kazu: a Japanese number training tool</a></h1>
+<p>Try it out: <a href="http://sebpearce.com/kazu" rel="nofollow">http://sebpearce.com/kazu</a><br>
+GitHub link: <a href="http://github.com/sebpearce/kazu" rel="nofollow">http://github.com/sebpearce/kazu</a></p>
+<p><strong>EDIT (2014-03-08)</strong>: I’ve done a complete revision of the design and features. <a href="http://sebpearce.com/kazu" rel="nofollow">Have a look!</a></p>
+<div class="img-container rightimg"><img src="/kazu_screenshot_big.png"></div>
+<p>I wrote this little app in my spartan basement suite apartment in Vancouver in autumn 2013.</p>
+<p>It’s a tool to help people who are learning Japanese. Large numbers in Japanese are a pain for English-speakers (and vice-versa) because they’re grouped in 4s, not 3s — but only after you get above 1,000.</p>
+<ul><li>千 <em>sen</em> = 1,000 (10<sup>3</sup>)</li>
+<li>万 <em>man</em> = 10,000 (10<sup>4</sup>)</li>
+<li>億 <em>oku</em> = 100,000,000 (10<sup>8</sup>)</li>
+<li>兆 <em>chou</em> = 1,000,000,000,000 (10<sup>12</sup>)</li></ul>
+<p>Compare this to our units of <em>thousand</em>, <em>million</em> and <em>billion</em>.</p>
+<ul><li>English: 100,000 (<em>a hundred thousand</em>)</li>
+<li>Japanese: 10 万 = 10,0000 (<em>ten man</em>)</li></ul>
+<p>Since I kept getting these wrong, I wrote an app to help. You can experiment by generating random numbers or typing in your own and seeing what they look like in Japanese.</p>
+<p><a href="http://sebpearce.com/kazu" rel="nofollow">Try it here.</a></p></article></div>
+
+
+
+	
+</div>
+  </body>
+</html>

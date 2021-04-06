@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script data-svelte="svelte-1rpz0h3">if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark")
+    } else {
+      document.documentElement.classList.remove("dark")
+    }
+  </script>
+
+
+
+<link rel="modulepreload" href="/./_app/start-c3acc060.js">
+			<link rel="modulepreload" href="/./_app/chunks/vendor-6704d4da.js">
+			<link rel="modulepreload" href="/./_app/pages/blog/firewood/index.md-e08ccf8d.js">
+			<link rel="modulepreload" href="/./_app/pages/blog.svelte-9ac8cdbc.js">
+			<link rel="stylesheet" href="/./_app/assets/start-a8cd1609.css">
+			<link rel="stylesheet" href="/./_app/assets/windi-bb585335.css">
+
+
+		<script type="module">
+			import { start } from "/./_app/start-c3acc060.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/blog/firewood/index.md-e08ccf8d.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/blog/firewood",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+  </head>
+  <body>
+    <div id="svelte">
+
+
+
+
+<div class="bg-white dark:bg-hex-111 flex justify-center"><article class="min-w-0 mx-1/10 mx-5 sm:mx-10 md:mx-20 py-20 prose prose-xl dark:prose-light"><h4>2014-02-06</h4>
+    <h1 id="firewood-a-solution-for-kindle-clippings"><a href="#firewood-a-solution-for-kindle-clippings">Firewood: a solution for Kindle clippings</a></h1>
+<p>GitHub link: <a href="https://github.com/sebpearce/firewood" rel="nofollow">https://github.com/sebpearce/firewood</a></p>
+<p><strong>Update for April 2015: With the help of a few generous individuals, Firewood has been rewritten Firewood in Python, and it’s called Pyrewood. It has more functionality and outputs Windows-friendly filenames. See the GitHub link.</strong></p>
+<p>The best feature of the Kindle is its ability to clip sections of text and append them to a text file called <code>My Clippings.txt</code>. The fact that Amazon decided to use plain text as a storage method is great because it makes it easy to work with.</p>
+<p>If you’re like me, you hate the idea of losing track of good ideas you come across while reading, but don’t want to have to write them down every time. The solution is to clip anything you want to remember.</p>
+<p>What I do is clip only the parts of a book that I think are worth remembering. Then, a few weeks later, I come back and read my abridged version without all the chaff. I got this idea from Robert Greene’s <a href="http://www.reddit.com/r/IAmA/comments/1cmb0d/i_am_robert_greene_author_of_the_48_laws_of_power/c9hv3g8" rel="nofollow">index card</a> technique as modified by <a href="http://thoughtcatalog.com/ryan-holiday/2013/04/read-to-lead-how-to-digest-books-above-your-level/" rel="nofollow">Ryan Holiday</a>. If you set recurring calendar reminders to review your notes periodically and then actually do it, you can avoid forgetting the good stuff.</p>
+<p>The problem is, it’s hard to make this abridged version because the Kindle just appends your clippings one after the other in the order you clipped them. So if you read more than one book at the same time, it becomes difficult to find the info you want by scrolling through it. One solution is to use <a href="http://www.clippings.io/" rel="nofollow">Clippings.io</a>, which saves your clippings and lets you view them by title, <s>but it doesn’t allow you to generate plain text files, which is what I wanted</s> (<strong>Edit</strong>: now it does, but only one at a time — Firewood does the whole lot at once). Why are text files better? Among other things, they allow you to take advantage of search capabilities in other software (such as the search feature in Spotlight on Mac OS) for quickly finding a note.</p>
+<p>Anyway, I wrote <a href="https://github.com/sebpearce/firewood" rel="nofollow">a program</a> in C that will parse your <code>My Clippings.txt</code> file and generate an organised list of text files, one per book. It strips away all the unnecessary info about the date, location, etc. so you can just read it straight through.</p>
+<p>It’s a command-line application <s>so you’ll need to be familiar with the terminal if you use a Mac or Linux</s> (<strong>Edit: I’ve made a Mac desktop app version that you can just double-click to run — <a href="https://www.dropbox.com/sh/je8x7m3ge1gqwdr/AAAVbp6xFFD2bEVVGMQmz0HAa" rel="nofollow">download it here</a></strong>). No Windows support yet.</p>
+<p>See the <a href="https://github.com/sebpearce/firewood" rel="nofollow">README</a> for details on how to use it.</p>
+<p>If you find it useful or have feature requests, <a href="mailto:sebpearce@gmail.com">let me know</a>.</p></article></div>
+
+
+
+	
+</div>
+  </body>
+</html>
