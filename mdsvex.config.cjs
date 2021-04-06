@@ -5,7 +5,7 @@ module.exports = {
   },
   layout: {
     _: "./src/routes/$layout.svelte",
-    blog: "./src/routes/$blog.svelte"
+    blog: "./src/routes/blog.svelte"
   },
   remarkPlugins: [
     [
