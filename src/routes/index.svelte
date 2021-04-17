@@ -4,6 +4,9 @@
   import YouTube from "../lib/YouTube.svelte"
   import Spinner from "../lib/Spinner.svelte"
   import Cursor from "../lib/Cursor.svelte"
+  import LaptopIcon from "../lib/LaptopIcon.svelte"
+  import MusicIcon from "../lib/MusicIcon.svelte"
+  import Pipe from "../lib/Pipe.svelte"
 </script>
 
 <main
@@ -26,17 +29,20 @@
         ><Cursor /></span
       >
     </h1>
-    <p
-      class="flex flex-col sm:flex-row items-center text-white tracking-widest mb-10 font-semibold"
+    <div
+      class="flex flex-col sm:flex-row gap-4 sm:gap-1 items-center text-white tracking-widest mb-10 font-semibold"
     >
-      <span class="mb-4 sm:mb-0">💻&nbsp;front-end developer</span><span
-        class="hidden sm:block text-gray-500 sm:mx-1">|</span
-      ><span
-        ><span class="inline sm:hidden">🎵&nbsp;</span>composer<span
-          class="hidden sm:inline">&nbsp;🎵</span
-        ></span
-      >
-    </p>
+      <span class="flex gap-2 items-center">
+        <span class="flex sm:mb-0 mr-0.5"><LaptopIcon /></span>
+        <span class="flex">front-end developer</span>
+      </span>
+      <span class="flex hidden sm:block text-gray-500 sm:mx-1.5"><Pipe /></span>
+      <span class="flex gap-1 items-center">
+        <span class="flex inline mr-1 sm:hidden"><MusicIcon /></span>
+        <span class="flex">composer</span>
+        <span class="flex hidden sm:inline"><MusicIcon /></span>
+      </span>
+    </div>
     <ul class="flex items-center justify-evenly w-full max-w-100 text-gray-500">
       <li class="hover:text-red-500">
         <Email />
