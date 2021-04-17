@@ -4,9 +4,11 @@
   import "virtual:windi.css"
   // bg-white dark:bg-hex-111 text-black dark:text-white
   export let date
+  export let title
 </script>
 
 <svelte:head>
+  <title>{title}</title>
   <script>
     if (
       localStorage.theme === "dark" ||

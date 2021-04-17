@@ -9,6 +9,10 @@
   import Pipe from "../lib/Pipe.svelte"
 </script>
 
+<svelte:head>
+  <title>seb pearce</title>
+</svelte:head>
+
 <main
   class="h-screen flex items-center justify-center overflow-x-hidden bg-hex-111 text-white"
 >
