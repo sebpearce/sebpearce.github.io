@@ -80,7 +80,7 @@ module.exports = {
         "spin-50-reverse": "spin 50s linear infinite reverse",
         "spin-60-reverse": "spin 60s linear infinite reverse",
         blink: "blink 1s infinite",
-        fadein: "fadein 4s"
+        fadein: "fadein 1s"
       },
       keyframes: {
         blink: {
