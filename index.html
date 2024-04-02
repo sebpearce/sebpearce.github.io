@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Front-end engineer (UI/UX) based in Australia." />
+    <title>seb pearce</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌲</text></svg>"
+    />
+    <style>
+      :root {
+        --hue: 210;
+        --color-page-bg: hsl(var(--hue) 12% 8.5%);
+        --color-text: hsl(var(--hue) 17% 90%);
+        --color-heading: hsl(var(--hue) 17% 97%);
+        --color-text-details: hsl(var(--hue) 5% 63%);
+        --color-hr: hsl(var(--hue) 9% 18%);
+        --color-link: hsl(var(--hue) 65% 97%);
+        --color-hover: hsl(var(--hue) 100% 75%);
+
+        color-scheme: dark;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-size: inherit;
+        font-weight: normal;
+      }
+
+      html {
+        height: 100%;
+      }
+
+      body {
+        background-color: var(--color-page-bg);
+        color: var(--color-text);
+        font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+        height: 100%;
+        padding: 0 5cqw;
+        box-sizing: border-box;
+        line-height: 1.5;
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
+
+      @media (min-width: 1024px) {
+        html {
+          font-size: 18px;
+        }
+
+        body {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      main {
+        width: 100%;
+        max-width: 66ch;
+        flex-basis: content;
+        padding: 18cqh 0;
+      }
+
+      h1:after {
+        content: " 🌲";
+      }
+
+      h1 {
+        color: var(--color-heading);
+      }
+
+      :is(h1, h2, h3) {
+        margin-bottom: 1.5rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      li:not(:last-of-type) {
+        margin-bottom: 0.5rem;
+      }
+
+      :is(header, section) + section {
+        margin-top: 1.5rem;
+      }
+
+      ul {
+        padding-left: 1.1em;
+      }
+
+      li {
+        padding-left: 0.3em;
+      }
+
+      .contact ul {
+        list-style: none;
+        padding-left: 0;
+
+        > li {
+          margin-bottom: 1.5rem;
+        }
+      }
+
+      .statement {
+        color: var(--color-text-details);
+      }
+
+      hr {
+        background-color: var(--color-hr);
+        border: none;
+        height: 1px;
+        margin: 2rem 0;
+      }
+
+      a {
+        color: var(--color-link);
+        text-decoration: none;
+        padding-bottom: 1px;
+        border-bottom: 1px solid var(--color-link);
+
+        &:hover {
+          color: var(--color-hover);
+          border-color: var(--color-hover);
+        }
+      }
+
+      .spinner {
+        position: fixed;
+        top: -8rem;
+        right: -10%;
+        width: clamp(15rem, 100%, 30vw);
+        height: clamp(15rem, auto, 30vw);
+        opacity: 0.2;
+      }
+
+      .spin {
+        --duration: 60s;
+        --direction: forwards;
+        animation: spin var(--duration) var(--direction) ease-in-out infinite;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="-50 -50 100 100"
+        opacity="0.5"
+        class="spinner"
+      >
+        <g fill="none" stroke="currentColor">
+          <circle
+            cx="0"
+            cy="0"
+            r="40"
+            stroke-width="5"
+            stroke-dasharray="0.5 3 0.5 5 0.5 7"
+            opacity="0.3"
+            class="spin"
+            style="--duration: 60s"
+          />
+          <circle
+            cx="0"
+            cy="0"
+            r="33"
+            stroke-width="1"
+            stroke-dasharray="140 60"
+            opacity="0.2"
+            class="spin"
+            style="--duration: 30s"
+          />
+          <circle
+            cx="0"
+            cy="0"
+            r="29"
+            stroke-width="0.5"
+            stroke-dasharray="30 7"
+            opacity="0.2"
+            class="spin"
+            style="--duration: 10s; --direction: reverse"
+          />
+          <circle
+            cx="0"
+            cy="0"
+            r="23.5"
+            stroke-width="4"
+            stroke-dasharray="0.5 2 0.5 3"
+            opacity="0.3"
+            class="spin"
+            style="--duration: 30s"
+          />
+          <circle
+            cx="0"
+            cy="0"
+            r="17.5"
+            stroke-width="0.5"
+            stroke-dasharray="20 4"
+            opacity="0.1"
+            class="spin"
+            style="--duration: 30s; --direction: reverse"
+          />
+          <circle
+            cx="0"
+            cy="0"
+            r="13.5"
+            stroke-width="0.5"
+            stroke-dasharray="12 4"
+            opacity="0.4"
+            class="spin"
+            style="--duration: 30s; --direction: reverse"
+          />
+        </g>
+      </svg>
+      <header>
+        <h1>seb pearce</h1>
+        <p>front-end engineer (UI/UX) (remote 🇦🇺)</p>
+      </header>
+      <section>
+        <ul>
+          <li>most comfortable in TS・CSS・SVG・react・svelte・tailwind</li>
+          <li>familiar with rails and node back ends</li>
+          <li>fan of frictionless DX and self-documenting code</li>
+        </ul>
+      </section>
+      <section>
+        <p class="statement">I like closing the gap between design and engineering. 🤏</p>
+      </section>
+      <hr />
+      <section class="contact">
+        <ul>
+          <li><a href="mailto:contact@sebpearce.com">contact@sebpearce.com</a></li>
+          <li><a href="https://github.com/sebpearce">github.com/sebpearce</a></li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
