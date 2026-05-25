@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,12 +11,12 @@
     />
     <style>
       :root {
-        --hue: 210;
-        --color-page-bg: hsl(var(--hue) 12% 8.5%);
+        --hue: 212;
+        --color-page-bg: linear-gradient(to bottom, #171b23, #050609);
         --color-text: hsl(var(--hue) 17% 90%);
         --color-heading: hsl(var(--hue) 17% 97%);
-        --color-text-details: hsl(var(--hue) 5% 63%);
-        --color-hr: hsl(var(--hue) 9% 18%);
+        --color-text-details: hsl(var(--hue) 35% 63%);
+        --color-hr: hsl(var(--hue) 29% 18%);
         --color-link: hsl(var(--hue) 65% 97%);
         --color-hover: hsl(var(--hue) 100% 75%);
 
@@ -31,14 +31,20 @@
       }
 
       html {
-        height: 100%;
+        min-height: 100%;
       }
 
       body {
-        background-color: var(--color-page-bg);
+        background: var(--color-page-bg);
         color: var(--color-text);
-        font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
-        height: 100%;
+        font-family:
+          Menlo,
+          Consolas,
+          Monaco,
+          Liberation Mono,
+          Lucida Console,
+          monospace;
+        min-height: 100%;
         padding: 0 5cqw;
         box-sizing: border-box;
         line-height: 1.5;
@@ -228,8 +234,8 @@
       </header>
       <section>
         <ul>
-          <li>most comfortable in TS・CSS・SVG・react・svelte・tailwind</li>
-          <li>familiar with rails and node back ends</li>
+          <li>most comfortable in TS・CSS・SVG・react・svelte</li>
+          <li>familiar with rails, go, and node back ends</li>
           <li>fan of frictionless DX and self-documenting code</li>
         </ul>
       </section>
